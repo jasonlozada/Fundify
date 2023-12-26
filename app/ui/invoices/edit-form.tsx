@@ -19,7 +19,6 @@ export default function EditInvoiceForm({
   invoice: InvoiceForm;
   customers: CustomerField[];
 }) {
-  
   const initialState = { message: null, errors: {} };
   const updateInvoiceWithId = updateInvoice.bind(null, invoice.id);
   const [state, dispatch] = useFormState(updateInvoiceWithId, initialState);
@@ -73,12 +72,12 @@ export default function EditInvoiceForm({
             </div>
           </div>
           <div id="customer-error" aria-live="polite" aria-atomic="true">
-              {state.errors?.amount &&
-                state.errors.amount.map((error: string) => (
-                  <p className="mt-2 text-sm text-red-500" key={error}>
-                    {error}
-                  </p>
-                ))}
+            {state.errors?.amount &&
+              state.errors.amount.map((error: string) => (
+                <p className="mt-2 text-sm text-red-500" key={error}>
+                  {error}
+                </p>
+              ))}
           </div>
         </div>
 
