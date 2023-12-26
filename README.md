@@ -4,7 +4,14 @@ This is the starter template for the Next.js App Router Course. It contains the 
 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
-### Create a .env file with these parameters:
+## Domain
+
+https://nextjs-dashboard-three-chi-47.vercel.app/
+
+## OR Run Locally
+
+1. Create a **.env** file and copy/paste the text provided onto it:
+
 ```env
 # Copy from .env.local on the Vercel dashboard
 # https://nextjs.org/learn/dashboard-app/setting-up-your-database#create-a-postgres-database
@@ -19,4 +26,17 @@ POSTGRES_DATABASE="verceldb"
 # `openssl rand -base64 32`
 AUTH_SECRET=
 AUTH_URL=http://localhost:3000/api/auth
+```
+
+2. On your _Terminal_ run these commands:
+
+```sh
+cd nextjs-dashboard
+npm -i
+```
+
+3. Run the server
+
+```sh
+npm run dev
 ```
